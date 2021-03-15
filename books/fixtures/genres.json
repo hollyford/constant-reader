@@ -1,0 +1,106 @@
+[
+    {
+        "pk": 1,
+        "model": "books.genres",
+        "fields": {
+            "name": "biography",
+            "friendly_name": "Biography"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "books.genres",
+        "fields": {
+            "name": "crime_thrillers_mystery",
+            "friendly_name": "Crime, Thrillers & Mystery"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "books.genres",
+        "fields": {
+            "name": "childrens_books",
+            "friendly_name": "Children's Books"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "books.genres",
+        "fields": {
+            "name": "food_drink",
+            "friendly_name": "Food & Drink"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "books.genres",
+        "fields": {
+            "name": "history",
+            "friendly_name": "History"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "books.genres",
+        "fields": {
+            "name": "horror",
+            "friendly_name": "Horror"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "books.genres",
+        "fields": {
+            "name": "science_fiction_fantasy",
+            "friendly_name": "Science Fiction & Fantasy"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "books.genres",
+        "fields": {
+            "name": "travel",
+            "friendly_name": "Travel"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "books.genres",
+        "fields": {
+            "name": "humour",
+            "friendly_name": "Humour"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "books.genres",
+        "fields": {
+            "name": "young_adult",
+            "friendly_name": "Young Adult"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "books.genres",
+        "fields": {
+            "name": "fiction",
+            "friendly_name": "Fiction"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "books.genres",
+        "fields": {
+            "name": "non_fiction",
+            "friendly_name": "Non Fiction"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "books.genres",
+        "fields": {
+            "name": "bestsellers",
+            "friendly_name": "Bestsellers"
+        }
+    }
+]

@@ -1,0 +1,363 @@
+[
+    {
+        "pk": 1,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1408855652",
+		"title": "Harry Potter and the Philosopher's Stone",
+		"author": "J.K. Rowling",
+		"published": "2014-09-01",
+		"publisher": "Bloomsbury Children's Books",
+		"pages": 352,
+		"description": "Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here. Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. The magic starts here! These editions of the classic and internationally bestselling Harry Potter series feature thrilling jacket artwork by award-winning illustrator Jonny Duddle. They are the perfect starting point for anyone who's ready to lose themselves in the greatest children's story of all time.",
+		"binding": "paperback",
+		"genres": 7,
+		"image": "1408855652.jpg",
+		"price": 5.00,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1408855666",
+		"title": "Harry Potter and the Chamber of Secrets",
+		"author": "J.K. Rowling",
+		"published": "2014-09-01",
+		"publisher": "Bloomsbury Children's Books",
+		"pages": 384,
+		"description": "Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone . Dobby's sinister predictions seem to be coming true.",
+		"binding": "paperback",
+		"genres": 7,
+		"image": "1408855666.jpg",
+		"price": 4.00,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1408855674",
+		"title": "Harry Potter and the Prisoner of Azkaban",
+		"author": "J.K. Rowling",
+		"published": "2014-09-01",
+		"publisher": "Bloomsbury Children's Books",
+		"pages": 480,
+		"description": "When the Knight Bus crashes through the darkness and screeches to a halt in front of him, it's the start of another far from ordinary year at Hogwarts for Harry Potter. Sirius Black, escaped mass-murderer and follower of Lord Voldemort, is on the run - and they say he is coming after Harry. In his first ever Divination class, Professor Trelawney sees an omen of death in Harry's tea leaves . But perhaps most terrifying of all are the Dementors patrolling the school grounds, with their soul-sucking kiss.",
+		"binding": "paperback", 
+		"genres": 10,
+		"image": "1408855674.jpg",
+		"price": 4.00,
+		"sale": "True"
+        }
+    },
+
+    {
+        "pk": 4,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "0241486106",
+		"title": "Tomorrow Will Be A Good Day: My Autobiography",
+		"author": "Captain Tom Moore",
+		"published": "2020-09-17",
+		"publisher": "Michael Joseph",
+		"pages": 400,
+		"description": "Embark on an echanting journey into our country's past hundred years through the remarkable life of Captain Sir Tom Moore. THE SUNDAY TIMES NO 1 BESTSELLER",
+		"binding": "hardback", 
+		"genres": 1,
+		"image": "0241486106.jpg",
+		"price": 11.00,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1688967486",
+		"title": "Freddie Mercury: A Life, In His Own Words",
+		"author": "Freddie Mercury",
+		"published": "2019-09-05",
+		"publisher": "Independently published",
+		"pages": 200,
+		"description": "Freddie Mercury: A Life, In His Own Words is the nearest thing to Freddie’s autobiography as it is possible to achieve. A moving, witty, often irreverent collection of quotes (or interview transcript) from the man himself, covering an extraordinary life, meticulously edited together by Queen’s long time archivists, with a Foreword by Freddie's mum. An essential read not just for fans of Queen and their iconic frontman, but anyone intrigued to know more about one of music’s most endearing and enduring performers.",
+		"binding": "paperback", 
+		"genres": 1,
+		"image": "1688967486.jpg",
+		"price": 9.99,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1788701984",
+		"title": "Right, Said Fred",
+		"author": "Andrew Flintoff",
+		"published": "2020-10-15",
+		"publisher": "Blink Publishing",
+		"pages": 304,
+		"description": "Right. Does anybody else watch Donald Trump as a guilty pleasure? When social distancing is over, can people still keep their distance? And these days, why has everyone got an opinion on everything and insist on sharing it? Oh. Scratch that one. Fresh from months of staying at home, Freddie is ready to impart his effortless charm and wisdom on a wild array of topics.",
+		"binding": "hardback", 
+		"genres": 9,
+		"image": "1788701984.jpg",
+		"price": 6.00,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "0008297193",
+		"title": "The Guest List",
+		"author": "Lucy Foley",
+		"published": "2020-09-03",
+		"publisher": "HarperFiction",
+		"pages": 384,
+		"description": "On an island off the windswept Irish coast, guests gather for the wedding of the year – the marriage of Jules Keegan and Will Slater. Old friends. Past grudges. Happy families. Hidden jealousies. Thirteen guests. One body. The wedding cake has barely been cut when one of the guests is found dead. And as a storm unleashes its fury on the island, everyone is trapped. All have a secret. All have a motive. One guest won’t leave this wedding alive . . .",
+		"binding": "paperback", 
+		"genres": 2,
+		"image": "0008297193.jpg",
+		"price": 5.00,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1538702738",
+		"title": "The Boy from the Woods",
+		"author": "Harlan Coben",
+		"published": "2020-03-17",
+		"publisher": "Grand Central Publishing",
+		"pages": 624,
+		"description": "Thirty years ago, Wilde was found as a boy living feral in the woods, with no memory of his past. Now an adult, he still doesn't know where he comes from, and another child has gone missing. No one seems to take Naomi Pine's disappearance seriously, not even her father--with one exception. Hester Crimstein, a television criminal attorney, knows through her grandson that Naomi was relentlessly bullied at school. Hester asks Wilde--with whom she shares a tragic connection--to use his unique skills to help find Naomi. Wilde can't ignore an outcast in trouble, but in order to find Naomi he must venture back into the community where he has never fit in, a place where the powerful are protected even when they harbor secrets that could destroy the lives of millions . . . secrets that Wilde must uncover before it's too late.",
+		"binding": "hardback", 
+		"genres": 2,
+		"image": "1538702738.jpg",
+		"price": 19.10,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "0140569324",
+		"title": "The Very Hungry Caterpillar",
+		"author": "Eric Carle",
+		"published": "2002-11-28",
+		"publisher": "Puffin",
+		"pages": 28,
+		"description": "The Very Hungry Caterpillar, Eric Carle's world-famous simple, hopeful story has become the most read children's book in Britain. Its vivid and colourful collage illustrations are iconic, and it is a must have picture book for children. The bright and bold paperback makes it the ideal bedtime book for toddlers, with its die-cut pages and finger-sized holes, children can play and read along.",
+		"binding": "paperback", 
+		"genres": 3,
+		"image": "0140569324.jpg",
+		"price": 4.49,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1407170716",
+		"title": "Stick Man",
+		"author": "Julia Donaldson",
+		"published": "2016-07-07",
+		"publisher": "Scholastic",
+		"pages": 32,
+		"description": "A wonderfully funny story from the author and illustrator of The Gruffalo and ZOG, which have all been made into animated films shown on BBC1",
+		"binding": "paperback", 
+		"genres": 3,
+		"image": "1407170716.jpg",
+		"price": 4.00,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1787133672",
+		"title": "Chinese Takeaway Cookbook",
+		"author": "Chinese Takeaway Cookbook",
+		"published": "2019-01-24",
+		"publisher": "Quadrille Publishing Ltd",
+		"pages": 160,
+		"description": "Chinese is the UK's favourite takeout food, and it's beloved all over the world - as with much Indian food, it's the nostalgic, comforting creations for western palates that really get people salivating. Now you can make your favourite Chinese restaurant classics at home with Kwoklyn Wan's fabulous Chinese Takeaway Cookbook.",
+		"binding": "hardback", 
+		"genres": 4,
+		"image": "1787133672.jpg",
+		"price": 11.49,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1787134636",
+		"title": "The Curry Guy Bible",
+		"author": "Dan Toombs",
+		"published": "2020-10-01",
+		"publisher": "Quadrille Publishing Ltd",
+		"pages": 352,
+		"description": "The Curry Guy Bible brings together 200 of Dan Toombs' classic dishes, developed over more than two decades of eating his way around Indian restaurants, takeaways and food stalls. Fans of The Curry Guy love his recipes - because they *really* work, tasting just like your curryhouse favourites.",
+		"binding": "hardback", 
+		"genres": 4,
+		"image": "1787134636.jpg",
+		"price": 16.36,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1785945076",
+		"title": "Mary Berry's Simple Comforts",
+		"author": "Mary Berry",
+		"published": "2020-09-17",
+		"publisher": "BBC Books",
+		"pages": 304,
+		"description": "In this brand new tie-in to a new BBC Two series, Mary Berry shares over 120 of her ultimate food recipes, all made simply and guaranteed to get smiles around your kitchen table.",
+		"binding": "hardback", 
+		"genres": 4,
+		"image": "1785945076.jpg",
+		"price": 12.00,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "0099590085",
+		"title": "Sapiens: A Brief History of Humankind",
+		"author": "Yuval Noah Harari",
+		"published": "2015-04-30",
+		"publisher": "Vintage",
+		"pages": 512,
+		"description": "Fire gave us power. Farming made us hungry for more. Money gave us purpose. Science made us deadly. This is the thrilling account of our extraordinary history – from insignificant apes to rulers of the world.",
+		"binding": "paperback", 
+		"genres": 5,
+		"image": "0099590085.jpg",
+		"price": 7.99,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1782941975",
+		"title": "KS2 Discover & Learn: History - Romans in Britain Study Book",
+		"author": "CGP Books",
+		"published": "2014-10-03",
+		"publisher": "Coordination Group Publications Ltd (CGP)",
+		"pages": 44,
+		"description": "This engrossing CGP Discover & Learn book is a superb way for children in Years 3 and 4 (ages 7-9) to understand and engage with the period of history when the Roman Empire extended into Britain. Each topic is presented on a full-colour double-page spread, with timelines, photos and illustrations to help bring the era to life. It’s written in a pupil-friendly style, with clear headings to break up the text and questions to get children thinking about the way people lived at the time.",
+		"binding": "paperback", 
+		"genres": 5,
+		"image": "1782941975.jpg",
+		"price": 4.95,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1648450660",
+		"title": "The Great Book of Badass Women: 15 Fearless and Inspirational Women that Changed History",
+		"author": "Rachel Walsh",
+		"published": "2020-09-05",
+		"publisher": "LAK Publishing",
+		"pages": 141,
+		"description": "There have been countless badass women who have changed the world for the better, yet most people have never even heard of them. Women throughout history have fought for their rights and the rights of others, defended their countries during wartime, healed the sick and the wounded, invented new technologies, led countries, made inspiring art, and so much more.",
+		"binding": "paperback", 
+		"genres": 5,
+		"image": "1648450660.jpg",
+		"price": 8.31,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1473676398",
+		"title": "The Outsider",
+		"author": "Stephen King",
+		"published": "2019-05-02",
+		"publisher": "Hodder Paperbacks",
+		"pages": 496,
+		"description": "A horrifying crime. Water-tight evidence points to a single suspect. Except he was seventy miles away, with an iron-clad alibi. Detective Anderson sets out to investigate the impossible: how can the suspect have been both at the scene of the crime and in another town?",
+		"binding": "paperback", 
+		"genres": 6,
+		"image": "1473676398.jpg",
+		"price": 4.50,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1444720730",
+		"title": "The Stand",
+		"author": "Stephen King",
+		"published": "2011-05-12",
+		"publisher": "Hodder & Stoughton",
+		"pages": 1344,
+		"description": "Dark dreams that warn of the coming of the dark man. The apostate of death, his worn-down boot heels tramping the night roads. The warlord of the charnel house and Prince of Evil. His time is at hand. His empire grows in the west and the Apocalypse looms. When a man crashes his car into a petrol station, he brings with him the foul corpses of his wife and daughter. He dies and it doesn't take long for the virus which killed him to spread across America and the world.",
+		"binding": "paperback", 
+		"genres": 6,
+		"image": "1444720730.jpg",
+		"price": 7.31,
+		"sale": "False"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "0141196886",
+		"title": "Dracula",
+		"author": "Bram Stoker",
+		"published": "2011-01-01",
+		"publisher": "Penguin Classics",
+		"pages": 512,
+		"description": "When Jonathan Harker visits Transylvania to help Count Dracula with the purchase of a London house, he makes a series of horrific discoveries about his client. Soon afterwards, various bizarre incidents unfold in England: an apparently unmanned ship is wrecked off the coast of Whitby; a young woman discovers strange puncture marks on her neck; and the inmate of a lunatic asylum raves about the 'Master' and his imminent arrival. In Dracula, Bram Stoker created one of the great masterpieces of the horror genre, brilliantly evoking a nightmare world of vampires and vampire hunters and also illuminating the dark corners of Victorian sexuality and desire.",
+		"binding": "hardback", 
+		"genres": 6,
+		"image": "0141196886.jpg",
+		"price": 11.55,
+		"sale": "True"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "books.books",
+        "fields": {
+            	"isbn": "1788689135",
+		"title": "Lonely Planet's Ultimate Travel List 2",
+		"author": "Lonely Planet",
+		"published": "2020-10-01",
+		"publisher": "Lonely Planet",
+		"pages": 336,
+		"description": "The second edition of Lonely Planet’s bestseller presents an all-new ranking of the greatest places to visit on Earth, reflecting the travel tastes and trends of today’s world. Decided by our global family of writers, editors and industry experts, and packed with insightful commentary, awe-inspiring photos and over 200 new entries, this is a must-have coffee table book for explorers and armchair travellers.",
+		"binding": "hardback", 
+		"genres": 8,
+		"image": "1788689135.jpg",
+		"price": 14.58,
+		"sale": "False"
+        }
+    }
+]
