@@ -2,6 +2,10 @@ from django.db import models
 
 
 class Genres(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Genres'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -13,6 +17,10 @@ class Genres(models.Model):
 
 
 class Books(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Books'
+
     genres = models.ForeignKey('Genres', null=True, blank=True, on_delete=models.SET_NULL)
     isbn = models.CharField(max_length=15)
     title = models.CharField(max_length=254)

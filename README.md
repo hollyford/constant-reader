@@ -1,0 +1,1 @@
+Bugs - found was unable to load models with multiple genres for an individual book. I've uploaded these with a single genre for now. I intend to return to this if time permits
