@@ -10,10 +10,35 @@
 {% endblock %}
 
 {% block content %}
-        <div class="container">
+<div class="overlay"></div>
+        <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                {{ books }}
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Books</h2>
+                <hr class="w-50">
+            </div>
+        </div>
+        <div class="row">
+            <div class="book-container col-10 offset-1">
+                <div class="row mt-1 mb-2"></div>
+                <div class="row">
+                    {% for book in books %}
+                        <div class="col-sm6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="card h-100 border-0">
+                                {% if book.image %}
+                                    <img src="{ book.image.url }" class="card-img-top img-fluid" alt="{ book.title }">
+                                {% else %}
+                                    <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ book.title }">
+                                {% endif %}
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ book.title }}</h5>
+                                    <h6 class="card-title">{{ book.author }}</h6>
+                                </div>
+                                <div class="card-footer">{{ book.price }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
