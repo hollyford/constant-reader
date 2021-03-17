@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Books</h2>
-                <hr class="w-50">
+                <hr class="w-100">
             </div>
         </div>
         <div class="row">
@@ -26,9 +26,13 @@
                         <div class="col-sm6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0">
                                 {% if book.image %}
-                                    <img src="{ book.image.url }" class="card-img-top img-fluid" alt="{ book.title }">
+                                    <a href="{% url 'book_detail' book.id %}">
+                                        <img src="{{ books.image.url }}" class="card-img-top img-fluid" alt="{ book.title }">
+                                    </a>
                                 {% else %}
-                                    <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ book.title }">
+                                    <a href="{% url 'book_detail' book.id %}">
+                                        <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ book.title }">
+                                    </a>
                                 {% endif %}
                                 <div class="card-body">
                                     <h5 class="card-title">{{ book.title }}</h5>

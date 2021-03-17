@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">  
+                {% if book.image %}
+                    <a href="{{ books.image.url }}" target="_blank">
+                        <img src="{ books.image.url }" class="card-img-top img-fluid" alt="{ book.title }">
+                    </a>
+                {% else %}
+                    <a href="">
+                        <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ book.title }">
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <p>{{ books.name }}</p>
+            <p>{{ books.author }}</p>
+            <p>{{ books.price }}</p>
+            <p>{{ books.description }}</p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
