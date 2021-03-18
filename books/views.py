@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Books
+from .models import Books, Genres
 
 # Create your views here.
 
@@ -11,6 +11,12 @@ def all_books(request):
 
     books = Books.objects.all()
     query = None
+    genres = None
+
+    if 'genres' in request.GET:
+        genres = request.GET['genres'].split(',')
+        books = books.filter(genres__name__in=genres)
+        genres = Genres.objects.filter(name__in=genres)
 
     if request.GET:
         if 'q' in request.GET:
@@ -27,6 +33,7 @@ def all_books(request):
     context = {
         'books': books,
         'search_term': query,
+        'current_genres': genres
     }
 
     return render(request, 'books/books.html', context)

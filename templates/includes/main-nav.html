@@ -6,10 +6,9 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Genre</a>
-                <a href="{% url 'books' %}" class="dropdown-item">All Books A - Z</a>
-                <a href="" class="dropdown-item">All Books Z - A</a>
+                <a href="{% url 'books' %}?genres=price" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?genres=genres" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
 
@@ -21,8 +20,6 @@
             <div class="dropdown-menu border-0" aria-labelledby="bestsellers-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Bestsellers A - Z</a>
-                <a href="" class="dropdown-item">All Bestsellers Z - A</a>
             </div>
         </li>
 
@@ -32,16 +29,16 @@
                 Genre
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="genre-link">
-                <a href="" class="dropdown-item">Biography</a>
-                <a href="" class="dropdown-item">Crime, Thrillers & Mystery</a>
-                <a href="" class="dropdown-item">Children's Books</a>
-                <a href="" class="dropdown-item">Food & Drink</a>
-                <a href="" class="dropdown-item">History</a>
-                <a href="" class="dropdown-item">Horror</a>
-                <a href="" class="dropdown-item">Science Fiction & Fantasy</a>
-                <a href="" class="dropdown-item">Travel</a>
-                <a href="" class="dropdown-item">Humour</a>
-                <a href="" class="dropdown-item">Young Adult</a>
+                <a href="{% url 'books' %}?genres=biography" class="dropdown-item">Biography</a>
+                <a href="{% url 'books' %}?genres=crime_thrillers_mystery" class="dropdown-item">Crime, Thrillers & Mystery</a>
+                <a href="{% url 'books' %}?genres=childrens_books" class="dropdown-item">Children's Books</a>
+                <a href="{% url 'books' %}?genres=food_drink" class="dropdown-item">Food & Drink</a>
+                <a href="{% url 'books' %}?genres=history" class="dropdown-item">History</a>
+                <a href="{% url 'books' %}?genres=horror" class="dropdown-item">Horror</a>
+                <a href="{% url 'books' %}?genres=science_fiction_fantasy" class="dropdown-item">Science Fiction & Fantasy</a>
+                <a href="{% url 'books' %}?genres=travel" class="dropdown-item">Travel</a>
+                <a href="{% url 'books' %}?genres=humout" class="dropdown-item">Humour</a>
+                <a href="{% url 'books' %}?genres=young_adult" class="dropdown-item">Young Adult</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -52,9 +49,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="fiction-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Fiction A - Z</a>
-                <a href="" class="dropdown-item">All Fiction Z - A</a>
-                <a href="" class="dropdown-item"></a>
+                <a href="" class="dropdown-item">All Fiction</a>
             </div>
         </li>
 
@@ -66,8 +61,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="non-fiction-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Non Fiction A-Z</a>
-                <a href="" class="dropdown-item">All Non Fiction Z-A</a>
+                <a href="" class="dropdown-item">All Non Fiction</a>
             </div>
         </li>
 
@@ -92,8 +86,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="sale-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Sale A - Z</a>
-                <a href="" class="dropdown-item">All Sale Z - A</a>
+                <a href="" class="dropdown-item">All Sale</a>
             </div>
         </li>
     </ul>
