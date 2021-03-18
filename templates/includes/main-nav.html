@@ -6,8 +6,8 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
-                <a href="{% url 'books' %}?genres=price" class="dropdown-item">By Price</a>
-                <a href="{% url 'books' %}?genres=genres" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
                 <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
@@ -18,8 +18,8 @@
                 Bestsellers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bestsellers-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
             </div>
         </li>
 
@@ -47,9 +47,9 @@
                 Fiction
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="fiction-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Fiction</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?genres=fiction" class="dropdown-item">All Fiction</a>
             </div>
         </li>
 
@@ -59,9 +59,9 @@
                 Non Fiction
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="non-fiction-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Non Fiction</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?genres=non_fiction" class="dropdown-item">All Non Fiction</a>
             </div>
         </li>
 
@@ -84,8 +84,8 @@
                 Sale
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="sale-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?genres=price&direction=asc" class="dropdown-item">By Genre</a>
                 <a href="" class="dropdown-item">All Sale</a>
             </div>
         </li>
