@@ -24,6 +24,13 @@
                         <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ book.title }">
                     </a>
                 {% endif %}
+                {% if book.genres %}
+                    <p class="small">
+                        <a href="{% url 'books' %}?genres={{ book.genre.name }}">
+                            <i class="fas fa-book-open"></i> {{ book.genres.friendly_name }}
+                        </a>
+                    </p>
+                {% endif %}
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
