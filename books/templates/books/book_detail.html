@@ -16,29 +16,30 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="image-container my-5">  
                 {% if book.image %}
-                    <a href="{{ books.image.url }}" target="_blank">
-                        <img src="{ books.image.url }" class="card-img-top img-fluid" alt="{ book.title }">
-                    </a>
+                    <a href="{% url 'book_detail' book.id %}">
+                            <img src="{{ book.image.url }}" class="card-img-top img-fluid" alt="{ book.title }">
+                        </a>
                 {% else %}
                     <a href="">
                         <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ book.title }">
                     </a>
                 {% endif %}
-                {% if book.genres %}
-                    <p class="small">
-                        <a href="{% url 'books' %}?genres={{ book.genre.name }}">
-                            <i class="fas fa-book-open"></i> {{ book.genres.friendly_name }}
-                        </a>
-                    </p>
-                {% endif %}
+                
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <p>{{ books.name }}</p>
-            <p>{{ books.author }}</p>
-            <p>{{ books.isbn }}</p>
-            <p>£{{ books.price }}</p>
-            <p>{{ books.description }}</p>
+            <p>{{ book.title }}</p>
+            <p>{{ book.author }}</p>
+            <p>ISBN: {{ book.isbn }}</p>
+            <p>£{{ book.price }}</p>
+            {% if book.genres %}
+                <p class="small">
+                    <a href="{% url 'books' %}?genres={{ book.genre.name }}">
+                        <i class="fas fa-book-open"></i> {{ book.genres.friendly_name }}
+                    </a>
+                </p>
+            {% endif %}
+            <p>{{ book.description }}</p>
         <form class="form" action="{% url 'add_to_bag' book.id %}" method="POST">
             {% csrf_token %}
             <div class="form-row">
