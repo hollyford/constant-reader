@@ -1,7 +1,10 @@
+{% load static %}
+
 <div aria-live="assertive" aria-atomic="true" class="d-flex justify-content-center align-items-center align-items-vertical w-100 message-container">
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
     <div class="toast-header bg-success text-dark">
-      <strong class="me-auto">Success</strong>
+        <img src="{% static '/favicon/favicon-32x32.png' %}" alt="" rel="icon" type="image/x-icon">
+      <strong class="me-auto"> Success</strong>
       <button type="button" class="btn-close ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
