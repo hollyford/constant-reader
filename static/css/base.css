@@ -137,11 +137,33 @@ body {
     }
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+
 /* My bespoke CSS */
 /* NAVBAR */
 
 .nav-colour {
     background-color: #fff3cd;
+}
+
+message-container {
+    z-index: 9999999;
 }
 
 /* Images */
