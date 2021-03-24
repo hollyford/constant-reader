@@ -105,19 +105,22 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'constant_reader.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+Database
+https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://cpmdkswbrheddr:58aea8fb345a5b1f2520346fa7ce5c30f8e89a747a1fe9fefcea00f322db7855@ec2-63-34-97-163.eu-west-1.compute.amazonaws.com:5432/de11s4p09n5ipa')
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'sjango.db.backends.sqlite3'
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation

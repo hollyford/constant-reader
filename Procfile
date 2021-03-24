@@ -1,0 +1,1 @@
+web: gunicorn constant_reader.wsgi:application
