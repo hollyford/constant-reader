@@ -26,7 +26,7 @@ SECRET_KEY = 'owuav5z7_bi!5&j2u1y660$^+5*kaow*1u%qrdw$i6gyj*a2yr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['constant-reader.herokuapp.com', 'loacalhost']
 
 
 # Application definition
@@ -105,23 +105,20 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'constant_reader.wsgi.application'
 
 
-Database
-https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
         'default': {
-            'ENGINE': 'sjango.db.backends.sqlite3'
+            'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
