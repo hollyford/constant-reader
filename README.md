@@ -1,1 +1,2 @@
 Bugs - found was unable to load models with multiple genres for an individual book. I've uploaded these with a single genre for now. I intend to return to this if time permits
+bug: django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path. - fix - added STATIC_ROOT to settings.py to solve collect static error when deploying to Heroku
