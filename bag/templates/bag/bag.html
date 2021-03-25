@@ -93,7 +93,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <a href="" class="btn btn-black rounded-0 btn-lg">
+                                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fas fa-lock"></i>
@@ -103,20 +103,6 @@
                         </tr>
                     </table>
                 </div>
-
-                <!-- <div class="row sm-12 lg-6">
-                               <div class="col">
-                                    <a href=""></a>
-                               </div>
-                               <div class="col">
-                                   Title
-                                   author
-                                   binding
-                                   quantity
-                                   price
-                                   remove x
-                               </div>
-                           </div> -->
 
             </div>
             {% else %}
