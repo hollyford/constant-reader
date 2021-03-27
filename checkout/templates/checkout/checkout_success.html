@@ -15,6 +15,7 @@
 
 {% block content %}
 <div class="overlay"></div>
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -25,14 +26,49 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
-            order summary
-        </div>
+<div class="container receipt-container">
+  <div class="row receipt">
+    <div class="col-sm-2">
+     <strong>Order Ref:</strong>
     </div>
-    <div class="row">
-        <div class="col">
-            Go back to the home page 
-        </div>
+    <div class="col-sm-2">
+      {{ order.order_number }}
     </div>
+  </div>
+    <div class="row">
+    <div class="col-sm-4 receipt">
+       <strong><p>Item Details</p></strong>
+      {% for item in order.lineitems.all %}
+      <div class="row">
+          <div class="col"><p>{{ item.book.title }}</p></div>
+          <div class="col"><p>X {{ item.quantity }}</p></div>
+          <div class="col"><p>£{{ item.book.price }}</p></div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="col-sm-4 receipt">
+      <strong><p>Price Details</p></strong>
+      <p>Total: £{{ order.order_total }}</p>
+      <p>Delivery: £{{ order.delivery_cost }}</p>
+      <p>Grand Total: £{{ order.grand_total }}</p>
+    </div>
+    <div class="col-sm-4 receipt">
+      <strong><p>Delivering To:</p></strong>
+      <p>{{ order.full_name }}</p>
+      <p>{{ order.street_address1 }}</p>
+        {% if order.street_address2 %}
+            <p>{{ order.street_address2 }}</p>
+        {% endif %}
+        {% if order.county %}
+            <p>{{ order.county }}</p>
+        {% endif %}
+            <p>{{ order.town_or_city }}</p>
+            <p>{{ order.postcode }}</p>
+            <p>{{ order.country }}</p>
+    </div>
+    <a class="btn" href="{% url 'books' %}" role="button">Look at more books!</a>
+  </div>
+
+
+</div>
 {% endblock %}
