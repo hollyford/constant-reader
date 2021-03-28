@@ -1,0 +1,1 @@
+Constant Reader Order Confirmation. Order Number: {{ order.order_number }}

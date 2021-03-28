@@ -1,0 +1,24 @@
+Dear Constant Reader {{ order.full_name }},
+
+Thank you for your order! We've included the details below. 
+
+Date: {{ order.date }}
+Order Number: {{ order.order_number }}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+We're sending your order to:
+
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ order.postcode }}
+
+Please get in touch if you have any questions! You can reach us at {{ contact_email }}
+
+Thanks again! 
+
+Kind regards,
+
+Constant Reader
