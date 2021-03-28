@@ -66,7 +66,11 @@
             <p>{{ order.postcode }}</p>
             <p>{{ order.country }}</p>
     </div>
-    <a class="btn" href="{% url 'books' %}" role="button">Look at more books!</a>
+    {% if from_profile %}
+        <a class="btn" href="{% url 'profile' %}" role="button">Back to Profile</a>
+    {% else %}
+        <a class="btn" href="{% url 'books' %}" role="button">Look at more books!</a>
+    {% endif %}
   </div>
 
 
