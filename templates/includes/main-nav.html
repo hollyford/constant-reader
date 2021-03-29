@@ -18,8 +18,8 @@
                 Bestsellers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bestsellers-link">
-                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?genres=bestsellers,sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?genres=bestsellers,sort=genres&direction=asc" class="dropdown-item">By Genre</a>
             </div>
         </li>
 
@@ -47,8 +47,8 @@
                 Fiction
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="fiction-link">
-                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?genres=fiction,sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?genres=fiction,sort=genres&direction=asc" class="dropdown-item">By Genre</a>
                 <a href="{% url 'books' %}?genres=fiction" class="dropdown-item">All Fiction</a>
             </div>
         </li>
@@ -59,8 +59,8 @@
                 Non Fiction
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="non-fiction-link">
-                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'books' %}?sort=genres&direction=asc" class="dropdown-item">By Genre</a>
+                <a href="{% url 'books' %}?genres=non_fiction,sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'books' %}?genres=non_fiction,sort=genres&direction=asc" class="dropdown-item">By Genre</a>
                 <a href="{% url 'books' %}?genres=non_fiction" class="dropdown-item">All Non Fiction</a>
             </div>
         </li>
@@ -71,22 +71,8 @@
                 Author
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="author-link">
-                <a href="" class="dropdown-item">A-F</a>
-                <a href="" class="dropdown-item">G-K</a>
-                <a href="" class="dropdown-item">L-P</a>
-                <a href="" class="dropdown-item">Q-U</a>
-                <a href="" class="dropdown-item">V-Z</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="sale-link" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                Sale
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="sale-link">
-                <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'books' %}?genres=price&direction=asc" class="dropdown-item">By Genre</a>
-                <a href="" class="dropdown-item">All Sale</a>
+                <a href="{% url 'books' %}?sort=author&direction=asc" class="dropdown-item">A-Z</a>
+                <a href="{% url 'books' %}?sort=author&direction=desc" class="dropdown-item">Z-A</a>
             </div>
         </li>
     </ul>

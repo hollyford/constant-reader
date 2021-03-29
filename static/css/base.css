@@ -204,3 +204,7 @@ input[name='q']::placeholder {
     border-style: double;
     border-width: 1px;
 }
+
+.fa-heart {
+    color: red;
+}

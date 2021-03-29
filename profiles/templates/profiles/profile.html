@@ -56,7 +56,7 @@
                                 <td>
                                     <ul class="list-unstyled">
                                         {% for item in order.lineitems.all %}
-                                            <li>{{ item.books.title }} X {{ item.quantity }}</li>
+                                            <li>{{ item.book.title }} X {{ item.quantity }}</li>
                                         {% endfor %}
                                     </ul>
                                 </td>
@@ -68,8 +68,6 @@
             </div>
         </div>
     </div>
-
-    {{ profile }}
 {% endblock %}
 
 {% block postloadjs %}

@@ -81,7 +81,9 @@
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
             </form>
-
+            {% if request.user.is_authenticated %}
+                <button type="button" class="btn"><a href="#">Add this book to your wish list book pile <i class="far fa-heart"></i></a></button>
+            {% endif %}
         </div>
     </div>
 </div>
