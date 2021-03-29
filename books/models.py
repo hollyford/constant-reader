@@ -34,7 +34,6 @@ class Books(models.Model):
     image = models.ImageField(null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     sale = models.BooleanField(null=True, blank=True)
-    favourites = models.ManyToManyField(User, related_name='favourite', default=None, blank=True)
     
     def __str__(self):
         return self.title

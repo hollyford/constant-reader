@@ -15,4 +15,4 @@ def __init__(self, *args, **kwargs):
 
     self.fields['genre'].choices = friendly_names
     for field_name, field in self.fields.items():
-        field.widget.attrs['class'] = 'border-black rounded-0'
+        field.widget.attrs['class'] = 'border-black rounded-0 my-2'

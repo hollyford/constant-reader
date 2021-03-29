@@ -195,11 +195,12 @@ input[name='q']::placeholder {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
+}
 
-/* My bespoke CSS */
 /* NAVBAR */
 
-.nav-colour {
+
+.header-colour {
     background-color: #fff3cd;
 }
 
@@ -212,4 +213,21 @@ input[name='q']::placeholder {
 
 .fa-heart {
     color: red;
+}
+
+.custom-card {
+        padding-bottom: 10px;
+}
+/* the following was created with the help from the answer on this page: https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width/53252725 */
+.card-img-top {
+    width: 100%;
+    max-height: 20vw;
+    min-height: 20vw;
+    object-fit: contain;
+}
+
+/* Genre links  */
+
+.link-no-dec {
+text-decoration: none;
 }
