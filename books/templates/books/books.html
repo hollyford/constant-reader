@@ -83,7 +83,14 @@
                             <h5 class="card-title">{{ book.title }}</h5>
                             <h6 class="card-title">{{ book.author }}</h6>
                         </div>
-                        <div class="card-footer">£{{ book.price }}</div>
+                        <div class="card-footer">£{{ book.price }}
+                            {% if request.user.is_superuser %}
+                            <small class="float-right">
+                                <a href="{% url 'edit_book' book.id %}">Edit</a> | 
+                                <a class="text-danger" href="{% url 'delete_book' book.id %}">Delete</a>
+                                {% endif %}
+                            </small>
+                        </div>
                     </div>
                 </div>
                 {% endfor %}
