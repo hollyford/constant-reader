@@ -93,3 +93,26 @@ def add_book(request):
     }
 
     return render(request, template, context)
+
+
+def edit_book (request, book_id):
+    book = get_object_or_404(Books, pk=book_id)
+    if request.method == 'POST':
+        form = BookForm(request.POST, request.FILES, instance=book)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated the book!')
+            return redirect(reverse('book_detail', args=[book.id]))
+        else:
+            messages.error(request, 'Failed to update the book. Please check the details and try again')
+    else:
+        form = BookForm(instance=book)
+        messages.info(request, 'You are editing this book')
+
+    template = 'books/edit_book.html'
+    context = {
+        'form': form,
+        'book': book,
+    }
+
+    return render(request, template, context)
