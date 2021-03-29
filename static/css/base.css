@@ -12,6 +12,19 @@ body {
     font-family: mirza, sans-serif;
 }
 
+.overlay {
+    background: url('/media/colour-book-pile.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+    opacity: 0.8;
+}
+
 .logo-font {
     text-transform: uppercase;
 }
@@ -66,15 +79,7 @@ body {
     background: #000 !important;
 }
 
-.overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
-}
+
 
 .btt-button {
     height: 42px;
