@@ -30,8 +30,8 @@
                         {% for item in bag_items %}
                         <tr>
                             <td>
-                                {% if item.image %}
-                                    <img src="{{ item.book.image.url }}" class="card-img-top img-fluid" alt="{ item.book.title }">
+                                {% if item.books.image %}
+                                    <img src="{{ item.books.image.url }}" class="card-img-top img-fluid" alt="{ item.book.title }">
                                 {% else %}
                                     <img src="{{ MEDIA_URL }}no-image.png" class="card-img-top img-fluid" alt="{ item.book.title }">
                                 {% endif %}
