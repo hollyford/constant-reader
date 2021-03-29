@@ -20,10 +20,12 @@ def profile(request):
     else: 
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
+
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
+        'on_profile_page': True
     }
 
     return render(request, template, context)
