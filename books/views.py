@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Books, Genres
+from .forms import BookForm
 
 # Create your views here.
 
@@ -73,3 +74,13 @@ def book_detail(request, book_id):
     }
 
     return render(request, 'books/book_detail.html', context)
+
+
+def add_book(request):
+    form = BookForm()
+    template = 'books/add_book.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

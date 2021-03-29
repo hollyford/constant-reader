@@ -2,9 +2,10 @@ from django import forms
 from .models import Books, Genres
 
 
-class ProductForm(forms.ModelForm):
-    models = Books
-    fields = '__all__'
+class BookForm(forms.ModelForm):
+    class Meta:
+        model = Books
+        fields = '__all__'
 
 
 def __init__(self, *args, **kwargs):
@@ -14,4 +15,4 @@ def __init__(self, *args, **kwargs):
 
     self.fields['genre'].choices = friendly_names
     for field_name, field in self.fields.items():
-        field.widget.attrs['class'] = 'border-black rounded-0
+        field.widget.attrs['class'] = 'border-black rounded-0'
