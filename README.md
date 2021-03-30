@@ -162,11 +162,57 @@ An error occured when attempting to deploy the site in Heroku jango.core.excepti
 * As a new site user, I want to be able to be able to be able to amend the items in my bag including quantities and removing them entirely
     1. The shopping bag has amend and delete buttons and the ability to increase the quantity
 
+### **Returning user testing**
+* As a returning site user, I want to be able to log in and out
+    1. Upon entering the site, there is the option in the nav bar to register and log in
+* As a returning site user, I want to be able to recover a forgotten password
+    1. By using the Django all auth packages, this facility is available to users with a profile
+* As a returning site user, I want to be able to have a personalised profile
+    1. Users have a profile within which they can update their personal details
+* As a returning site user, I want to be able to view my past orders
+    1.  Within the profile page, there is a list of past orders 
+    1. users can click on these orders to view the full details
 
-TBC
+### **Site owner testing:**
+* As a site owner, I want to be able to create, edit and delete books
+    1. There is a delete button on each book
+    1. There is an edit button on each book which takes the user to a form where they can edit the content
+    1. There is a form available from the nav bar to allow the creation of new books
+* As a site owner, I want to the ability to create, edit and delete books to be limited to superusers
+    1. The create edit and delete function is limited in two ways. Jinja logic is used within the html code and the @login_required decorator is used within the views. py document
 
-
-
+### **Performance testing:**
+1. Tested website responsiveness using http://www.responsinator.com/
+    1. Results: The website is responsive to all device sizes without any unnecessary x-scroll
+1. Tested the image size to ensure no image is to large and impacting the website loading times. I used the Google Dev Tools - Network
+    1. Results: The site loading time is appropriate. The total website loading time is 1.1s is acceptable
+1. Tested the images on the all books page using Google Dev Tools - Lighthouse
+    1. Results: It was recommended that the images used were of a smaller size to improve download speed and cause less data consumption.
+1. All HTML and CSS were tested using https://jigsaw.w3.org/css-validator/validator
+    1. All but the templates resulted in errors that the Lang Doctype and Title were missing. This was to be expected as the details were being extended from the base template to did not need to be added
+    1. All HTML pages resulted in errors where the Jinja template language was used
+    1. None of these are actual errors within the code
+	1. Some CSS errors were observed. However, the items highlighted were added intentionally to the CSS files and did create the desired affect
+1. Tested the website on the Google Chrome browser Version 89.0.4389.90 (Official Build) (64-bit)
+    1. Results: The website was responsive and the elements performed in the way they were intended to
+1. Tested the website on the Microsoft Edge browser Version 89.0.774.63 (Official build) (64-bit)
+    1. Results: The website was responsive and the elements performed in the way they were intended to
+1. Tested the website on the Firefox browser Version 82.0.3 (64-bit)
+    1. Results: The website was responsive and the elements performed in the way they were intended to
+1. Tested adding items to the bag
+    1. Results: Successfully able to add an item to the bag
+1. Tested increasing the quantity of items in the bag
+    1. Results: Successfully able to increase the quantity of an item in the bag
+1. Tested removing items from the bag
+    1. Results:Successfully removed an item from the bag
+1. Tested the stripe process using 4242 4242 4242 4242 which should be successful
+    1. Results: Order completed successfully and the confirmation page appears
+1. Tested the stripe process using 4000 0027 6000 3184 which will request authorisation - completed authentication
+    1. Results: Authorisation screen appears then the order completed successfully and the confirmation page appears
+1. Tested the stripe process using 4000 0027 6000 3184 which will request authorisation - selected declined
+    1. Results: The payment fails and the user is returned to the checkout page. The appropriate error message appears
+1. Tested the profile page and that the orders placed above show correctly
+	1. Results: The two successful orders made during testing appeared on the right hand side of the screen
 
 # <a name="deployment"></a> Deployment
 ## <a name="github"></a> Github Pages
@@ -267,8 +313,6 @@ colour-book-pile.jpg|	Cover image|	https://buddhify.com/what-mindfulness-and-med
 no-image.png|	No images available|	https://commons.wikimedia.org/wiki/File:No-image-available.png
 
 ## <a name="acks"></a> Acknowledgements
-* 
-
 * Ed Bradley - I also used this readme as an example of how to deploy Heroku
     * https://github.com/Edb83/self-isolution
 
